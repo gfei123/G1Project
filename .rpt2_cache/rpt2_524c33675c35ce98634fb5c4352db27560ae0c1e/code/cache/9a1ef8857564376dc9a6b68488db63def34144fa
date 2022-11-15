@@ -1,0 +1,7 @@
+{
+  "code": "import BaseView from \"./BaseView\";\r\nexport default class ColorFilterView extends BaseView {\r\n    onAwake() {\r\n        super.onAwake();\r\n    }\r\n}\r\n//# sourceMappingURL=ColorFilterView.js.map",
+  "references": [
+    "D:/LayaProject/LayaToolBox-master/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"ColorFilterView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/ColorFilterView.ts\"],\"names\":[],\"mappings\":\"AAAA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,eAAgB,SAAQ,QAAQ;IACjD,OAAO;QAEH,KAAK,CAAC,OAAO,EAAE,CAAC;IACpB,CAAC;CACJ\"}"
+}

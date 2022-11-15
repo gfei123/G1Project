@@ -1,0 +1,7 @@
+{
+  "code": "import BaseView from \"./BaseView\";\r\nexport default class RadioView extends BaseView {\r\n    onAwake() {\r\n        super.onAwake();\r\n        this.radiogroup.on(Laya.Event.CLICK, this, () => {\r\n            console.log(this.radiogroup.selectedIndex);\r\n        });\r\n    }\r\n}\r\n//# sourceMappingURL=RadioView.js.map",
+  "references": [
+    "D:/LayaProject/LayaToolBox-master/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"RadioView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/RadioView.ts\"],\"names\":[],\"mappings\":\"AACA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,SAAU,SAAQ,QAAQ;IAK3C,OAAO;QAEH,KAAK,CAAC,OAAO,EAAE,CAAC;QAGhB,IAAI,CAAC,UAAU,CAAC,EAAE,CAAC,IAAI,CAAC,KAAK,CAAC,KAAK,EAAE,IAAI,EAAE,GAAE,EAAE;YAC3C,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,UAAU,CAAC,aAAa,CAAC,CAAC;QAC/C,CAAC,CAAC,CAAC;IAGP,CAAC;CAEJ\"}"
+}

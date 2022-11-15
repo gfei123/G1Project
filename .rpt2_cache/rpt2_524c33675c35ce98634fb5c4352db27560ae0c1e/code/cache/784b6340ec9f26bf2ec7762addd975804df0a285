@@ -1,0 +1,8 @@
+{
+  "code": "import GameUtils from \"../Util/GameUtils\";\r\nimport BaseView from \"./BaseView\";\r\nexport default class TextTipsView extends BaseView {\r\n    onAwake() {\r\n        super.onAwake();\r\n        this.doBtn.on(Laya.Event.CLICK, this, () => {\r\n            GameUtils.FlyTextTips(this.textInput.text);\r\n        });\r\n    }\r\n}\r\n//# sourceMappingURL=TextTipsView.js.map",
+  "references": [
+    "D:/LayaProject/LayaToolBox-master/src/Util/GameUtils.ts",
+    "D:/LayaProject/LayaToolBox-master/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"TextTipsView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/TextTipsView.ts\"],\"names\":[],\"mappings\":\"AACA,OAAO,SAAS,MAAM,mBAAmB,CAAC;AAC1C,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,YAAa,SAAQ,QAAQ;IAI9C,OAAO;QACH,KAAK,CAAC,OAAO,EAAE,CAAC;QAEhB,IAAI,CAAC,KAAK,CAAC,EAAE,CAAC,IAAI,CAAC,KAAK,CAAC,KAAK,EAAE,IAAI,EAAE,GAAG,EAAE;YACvC,SAAS,CAAC,WAAW,CAAC,IAAI,CAAC,SAAS,CAAC,IAAI,CAAC,CAAC;QAC/C,CAAC,CAAC,CAAC;IACP,CAAC;CACJ\"}"
+}

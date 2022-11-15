@@ -1,0 +1,8 @@
+{
+  "code": "import BaseView from \"./BaseView\";\r\nexport default class WebHeadView extends BaseView {\r\n    onAwake() {\r\n        super.onAwake();\r\n        let url = \"http://ask.layabox.com/static/common/avatar-max-img.png\";\r\n        Laya.loader.load(url, Laya.Handler.create(this, () => {\r\n            this.circleHeadImage.skin = url;\r\n            this.headImage.skin = url;\r\n        }));\r\n    }\r\n}\r\n//# sourceMappingURL=WebHeadView.js.map",
+  "references": [
+    "D:/LayaProject/LayaToolBox-master/src/Util/GameUtils.ts",
+    "D:/LayaProject/LayaToolBox-master/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"WebHeadView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/WebHeadView.ts\"],\"names\":[],\"mappings\":\"AACA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,WAAY,SAAQ,QAAQ;IAY7C,OAAO;QACH,KAAK,CAAC,OAAO,EAAE,CAAC;QAEhB,IAAI,GAAG,GAAG,yDAAyD,CAAC;QACpE,IAAI,CAAC,MAAM,CAAC,IAAI,CAAC,GAAG,EAChB,IAAI,CAAC,OAAO,CAAC,MAAM,CAAC,IAAI,EAAE,GAAG,EAAE;YAC3B,IAAI,CAAC,eAAe,CAAC,IAAI,GAAG,GAAG,CAAC;YAChC,IAAI,CAAC,SAAS,CAAC,IAAI,GAAG,GAAG,CAAC;QAC9B,CAAC,CAAC,CAAC,CAAC;IACZ,CAAC;CACJ\"}"
+}

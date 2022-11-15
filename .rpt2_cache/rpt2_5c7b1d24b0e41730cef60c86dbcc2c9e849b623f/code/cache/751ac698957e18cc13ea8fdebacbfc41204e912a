@@ -1,0 +1,7 @@
+{
+  "code": "import BaseView from \"./BaseView\";\r\nexport default class TimeCountView extends BaseView {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.progressValue = 0;\r\n    }\r\n    onAwake() {\r\n        super.onAwake();\r\n        this.progressBar.value = 0;\r\n        Laya.timer.frameLoop(5, this, () => {\r\n            this.progressBar.value = this.progressValue / 100;\r\n            ++this.progressValue;\r\n            if (this.progressValue > 100) {\r\n                this.progressValue = 0;\r\n            }\r\n            this.lbl.text = this.progressValue + \"%\";\r\n        });\r\n    }\r\n}\r\n//# sourceMappingURL=ProgressBarView.js.map",
+  "references": [
+    "D:/LayaProject/GP/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"ProgressBarView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/ProgressBarView.ts\"],\"names\":[],\"mappings\":\"AAAA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,aAAc,SAAQ,QAAQ;IAAnD;;QAEI,kBAAa,GAAU,CAAC,CAAC;IAgB7B,CAAC;IAdG,OAAO;QAEH,KAAK,CAAC,OAAO,EAAE,CAAC;QAChB,IAAI,CAAC,WAAW,CAAC,KAAK,GAAG,CAAC,CAAC;QAC3B,IAAI,CAAC,KAAK,CAAC,SAAS,CAAC,CAAC,EAAE,IAAI,EAAE,GAAE,EAAE;YAC9B,IAAI,CAAC,WAAW,CAAC,KAAK,GAAG,IAAI,CAAC,aAAa,GAAC,GAAG,CAAC;YAChD,EAAE,IAAI,CAAC,aAAa,CAAC;YACrB,IAAG,IAAI,CAAC,aAAa,GAAG,GAAG,EAC3B;gBACI,IAAI,CAAC,aAAa,GAAG,CAAC,CAAC;aAC1B;YACD,IAAI,CAAC,GAAG,CAAC,IAAI,GAAG,IAAI,CAAC,aAAa,GAAG,GAAG,CAAC;QAC7C,CAAC,CAAC,CAAC;IACP,CAAC;CACJ\"}"
+}

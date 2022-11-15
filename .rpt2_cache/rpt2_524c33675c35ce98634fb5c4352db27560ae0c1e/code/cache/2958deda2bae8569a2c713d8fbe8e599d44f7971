@@ -1,0 +1,7 @@
+{
+  "code": "import BaseView from \"./BaseView\";\r\nexport default class FrameInfoView extends BaseView {\r\n    onAwake() {\r\n        super.onAwake();\r\n        this.checkBox.selected = FrameInfoView.showFrameInfo;\r\n        this.checkBox.on(Laya.Event.CLICK, this, () => {\r\n            FrameInfoView.showFrameInfo = this.checkBox.selected;\r\n            if (FrameInfoView.showFrameInfo) {\r\n                Laya.Stat.show();\r\n            }\r\n            else {\r\n                Laya.Stat.hide();\r\n            }\r\n        });\r\n    }\r\n}\r\nFrameInfoView.showFrameInfo = false;\r\n//# sourceMappingURL=FrameInfoView.js.map",
+  "references": [
+    "D:/LayaProject/LayaToolBox-master/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"FrameInfoView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/FrameInfoView.ts\"],\"names\":[],\"mappings\":\"AAAA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,aAAc,SAAQ,QAAQ;IAG/C,OAAO;QAEH,KAAK,CAAC,OAAO,EAAE,CAAC;QAChB,IAAI,CAAC,QAAQ,CAAC,QAAQ,GAAG,aAAa,CAAC,aAAa,CAAC;QAErD,IAAI,CAAC,QAAQ,CAAC,EAAE,CAAC,IAAI,CAAC,KAAK,CAAC,KAAK,EAAE,IAAI,EAAC,GAAE,EAAE;YACxC,aAAa,CAAC,aAAa,GAAG,IAAI,CAAC,QAAQ,CAAC,QAAQ,CAAC;YACrD,IAAG,aAAa,CAAC,aAAa,EAC9B;gBACI,IAAI,CAAC,IAAI,CAAC,IAAI,EAAE,CAAC;aACpB;iBAED;gBACI,IAAI,CAAC,IAAI,CAAC,IAAI,EAAE,CAAC;aACpB;QACL,CAAC,CAAC,CAAC;IACP,CAAC;;AAlBM,2BAAa,GAAW,KAAK,CAAC\"}"
+}

@@ -1,0 +1,23 @@
+<page>
+   <item name="MainView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="TimeCountView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="FrameInfoView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="FontClipView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="SoundPlayView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="DlgShowView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="RadioView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="TextTipsView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="HorselampView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="Scene3DView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="PrefabAniView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="ParticleView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="WebHeadView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="HttpRequestView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="SocketTestView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="BackpackView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="ComboBoxView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="TabPageView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="AtlasAniView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="RayCastToMoveView.scene" props="" ifExport="分离模式" aName=""/>
+   <item name="Joystick3DCtrlView.scene" props="" ifExport="分离模式" aName=""/>
+</page>

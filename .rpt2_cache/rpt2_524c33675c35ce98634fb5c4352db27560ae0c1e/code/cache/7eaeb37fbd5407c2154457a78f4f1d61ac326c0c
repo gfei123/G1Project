@@ -1,0 +1,7 @@
+{
+  "code": "import BaseView from \"./BaseView\";\r\nexport default class FontNumView extends BaseView {\r\n    onAwake() {\r\n        super.onAwake();\r\n        this.fontClip.value = this.textInput.text;\r\n        this.textInput.on(Laya.Event.BLUR, this, () => {\r\n            this.fontClip.value = this.textInput.text;\r\n        });\r\n    }\r\n}\r\n//# sourceMappingURL=FontNumView.js.map",
+  "references": [
+    "D:/LayaProject/LayaToolBox-master/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"FontNumView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/FontNumView.ts\"],\"names\":[],\"mappings\":\"AAAA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,WAAY,SAAQ,QAAQ;IAI7C,OAAO;QAEH,KAAK,CAAC,OAAO,EAAE,CAAC;QAChB,IAAI,CAAC,QAAQ,CAAC,KAAK,GAAG,IAAI,CAAC,SAAS,CAAC,IAAI,CAAC;QAE1C,IAAI,CAAC,SAAS,CAAC,EAAE,CAAC,IAAI,CAAC,KAAK,CAAC,IAAI,EAAE,IAAI,EAAC,GAAE,EAAE;YACxC,IAAI,CAAC,QAAQ,CAAC,KAAK,GAAG,IAAI,CAAC,SAAS,CAAC,IAAI,CAAC;QAC9C,CAAC,CAAC,CAAC;IAEP,CAAC;CACJ\"}"
+}

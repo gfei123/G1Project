@@ -1,0 +1,7 @@
+{
+  "code": "import BaseView from \"./BaseView\";\r\nexport default class DlgShowView extends BaseView {\r\n    onAwake() {\r\n        super.onAwake();\r\n        this.okBtn.on(Laya.Event.CLICK, this, () => {\r\n            this.doTween();\r\n        });\r\n        this.doTween();\r\n    }\r\n    doTween() {\r\n        this.dlgBg.scale(0, 0);\r\n        Laya.Tween.to(this.dlgBg, { scaleX: 1, scaleY: 1 }, 500, Laya.Ease.quartOut, Laya.Handler.create(this, () => {\r\n            console.log(\"tween 动画完毕\");\r\n        }), 50);\r\n    }\r\n}\r\n//# sourceMappingURL=DlgShowView.js.map",
+  "references": [
+    "D:/LayaProject/LayaToolBox-master/src/View/BaseView.ts"
+  ],
+  "map": "{\"version\":3,\"file\":\"DlgShowView.js\",\"sourceRoot\":\"\",\"sources\":[\"../../../src/View/DlgShowView.ts\"],\"names\":[],\"mappings\":\"AAAA,OAAO,QAAQ,MAAM,YAAY,CAAC;AAElC,MAAM,CAAC,OAAO,OAAO,WAAY,SAAQ,QAAQ;IAI7C,OAAO;QACH,KAAK,CAAC,OAAO,EAAE,CAAC;QAChB,IAAI,CAAC,KAAK,CAAC,EAAE,CAAC,IAAI,CAAC,KAAK,CAAC,KAAK,EAAE,IAAI,EAAE,GAAG,EAAE;YACvC,IAAI,CAAC,OAAO,EAAE,CAAC;QACnB,CAAC,CAAC,CAAC;QAGH,IAAI,CAAC,OAAO,EAAE,CAAC;IAEnB,CAAC;IAED,OAAO;QAEH,IAAI,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC;QACvB,IAAI,CAAC,KAAK,CAAC,EAAE,CAAC,IAAI,CAAC,KAAK,EAAE,EAAE,MAAM,EAAE,CAAC,EAAE,MAAM,EAAE,CAAC,EAAE,EAAE,GAAG,EAAE,IAAI,CAAC,IAAI,CAAC,QAAQ,EACvE,IAAI,CAAC,OAAO,CAAC,MAAM,CAAC,IAAI,EAAE,GAAG,EAAE;YAC3B,OAAO,CAAC,GAAG,CAAC,YAAY,CAAC,CAAC;QAC9B,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC;IAChB,CAAC;CACJ\"}"
+}
